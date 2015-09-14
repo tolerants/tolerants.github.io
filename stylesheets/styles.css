@@ -1,0 +1,46 @@
+/* Layout */
+.content-block {
+    padding: 0;
+    font-size: 12px;
+    font-family: monospace;
+}
+.content-block:after {
+    content: '}';
+    color: #000;
+}
+dl {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.selector span {
+    color: #000080;
+    font-weight: bold;
+}
+.selector:after {
+    content: '\0000a0{';
+    color: #000;
+}
+
+.property {
+    clear: left;
+    float: left;
+    color: #00f;
+}
+.property:before {
+    content: '\0000a0\0000a0\0000a0\0000a0';
+}
+.property:after {
+    content: ':\0000a0';
+}
+
+.value {
+    color: #008000;
+    float: left;
+    padding-left: 0;
+    font-weight: bold;
+    font-style: normal;
+}
+.value:after {
+    content: ';';
+}
